@@ -46,6 +46,5 @@ class DialogChoice extends Dialog {
 		var manager : GameObject = GameObject.Find("GameManager");
 		manager.GetComponent(MenuSystem).push(menu);
 		manager.GetComponent(GameMode).setCurrentMode(Mode.Pause);
-		
 	}
 }

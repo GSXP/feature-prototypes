@@ -2,12 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Dialog\DialogSystem.js">
     <Files>
-      <File FileName="Assets\Scripts\Dialog\Choices\YouLikeChoice.js" Line="8" Column="2" />
-      <File FileName="Assets\Scripts\Dialog\DialogSystem.js" Line="5" Column="33" />
-      <File FileName="Assets\Scripts\Dialog\DialogController.js" Line="3" Column="1" />
-      <File FileName="Assets\Scripts\Dialog\Dialog.js" Line="51" Column="2" />
-      <File FileName="Assets\Scripts\Menus\Menu.js" Line="20" Column="4" />
-      <File FileName="Assets\Scripts\Menus\ListMenu.js" Line="13" Column="42" />
+      <File FileName="Assets\Scripts\Dialog\DialogSystem.js" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\Dialog\Choices\YouLikeChoice.js" Line="17" Column="2" />
+      <File FileName="Assets\Scripts\Dialog\Dialog.js" Line="48" Column="61" />
+      <File FileName="Assets\Scripts\Dialog\DialogController.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

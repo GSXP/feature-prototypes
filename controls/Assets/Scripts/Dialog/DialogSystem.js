@@ -42,7 +42,7 @@ function Update () {
 		}
 	} else if (currentDialog != null) {
 		currentDialog.Update();
-		displayTime -= Time.deltaTime;
+		displayTime -= Time.deltaTime;		
 		if (displayTime <= 0) {
 			// Time's up
 			currentDialog = null;

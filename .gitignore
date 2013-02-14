@@ -47,7 +47,7 @@ local.properties
 *_i.c
 *_p.c
 *.ilk
-*.meta
+#Needed by Unity for Version Control *.meta
 *.obj
 *.pch
 *.pdb
@@ -166,17 +166,7 @@ pip-log.txt
 #Spencer's Controls
 #From: http://www.chrisdanielson.com/2011/06/04/unity3d-projects-version-control-git/
 ###################
-controls/Library/AssetImportState
-controls/Library/AssetServerCacheV3
-controls/Library/FailedAssetImports.txt
-controls/Library/ScriptAssemblies
-controls/Library/ScriptMapper
-controls/Library/assetDatabase3
-controls/Library/cache
-controls/Library/expandedItems
-controls/Library/metadata
-controls/Library/previews
-controls/Library/guidmapper
+controls/Library
 controls/Temp
 controls/*.pidb
 controls/build
