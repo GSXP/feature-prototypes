@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Player.js">
+    <Files>
+      <File FileName="Assets/Plugins/spritemanager/Sprite.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/spritemanager/SpriteManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Player.js" Line="82" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ericbowden/Documents/unity projects/test/Assets/Plugins/spritemanager/Sprite.cs" line="312" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
