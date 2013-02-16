@@ -57,7 +57,10 @@
      <Compile Include="Assets\Scripts\Menus\SpellMenu.js" />
      <Compile Include="Assets\Scripts\Movement.js" />
      <Compile Include="Assets\Scripts\SidekickController.js" />
-     <Compile Include="Assets\Scripts\Spells.js" />
+     <Compile Include="Assets\Scripts\Spells\FollowMouse.js" />
+     <Compile Include="Assets\Scripts\Spells\FollowRaycast.js" />
+     <Compile Include="Assets\Scripts\Spells\Heal.js" />
+     <Compile Include="Assets\Scripts\Spells\Spells.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

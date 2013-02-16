@@ -11,11 +11,14 @@ function Start() {
 	dialogQueue = new List.<Dialog>();
 	displayTime = -1;
 	currentDialog = null;
-	enqueue(new Dialog("This is important! You need to press Space to continue."));
-	enqueue(new Dialog("Now you're free to walk around.", 3));
-	enqueue(new Dialog("Go ahead. WASD or arrow keys. Escape for Menu.", 5));
-	enqueue(new Dialog("Looking good! Don't you agree?", 3));
-	enqueue(new DialogChoice(new YouLikeChoice()));
+	
+	enqueue(new Dialog("Welcome to the new Controls Demo. Press Space to continue."));
+	enqueue(new Dialog("First, let's try the new mouse controls.\nRight-Click = Move\nLeft-Click = Heal\nLeft-Hold = Special"));
+	enqueue(new Dialog("Try it yourself!\nRight-Click = Move\nLeft-Click = Heal\nLeft-Hold = Special", 20));
+	enqueue(new Dialog("Next, arrow/buttons.\nWASD/Arrows = Move\nLeft-Alt = Heal\nLeft-Ctrl = Special"));
+	enqueue(new Dialog("Try it yourself!\nWASD/Arrows = Move\nLeft-Alt = Heal\nLeft-Ctrl = Special", 20));
+	enqueue(new Dialog("Feel free to mix and match.\nI personally prefer WASD with mouse clicks for casting."));
+	enqueue(new Dialog("That concludes this demo. Thanks for playing!", 20));
 }
 
 function enqueue(dialog : Dialog) {
@@ -34,7 +37,7 @@ function Update () {
 		currentDialog.Update();
 		// Wait for input
 		if (Input.GetButtonDown("Jump")) {
-			currentDialog == null;
+			currentDialog = null;
 			if (dialogQueue.Count == 0 || dialogQueue[0].duration != -1) {
 				// no need to pause
 				gameMode.UnpauseGame();
@@ -56,6 +59,7 @@ function Update () {
 
 function loadNext() {
 	currentDialog = dialogQueue[0];
+	print("loading " + currentDialog.text);
 	dialogQueue.RemoveAt(0);
 	displayTime = currentDialog.duration;
 	if (currentDialog.duration == -1) {

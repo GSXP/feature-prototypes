@@ -22,6 +22,7 @@ class Dialog {
 		var height = Screen.height / 6;
 		textRect = Rect(Screen.width / 2 - width / 2, Screen.height / 2 + height * 1.5, width, height);
 		
+		GUI.skin.box.fontSize = Screen.width/40;
 		GUI.Box(textRect, text);
 		
 		if(duration == -1)

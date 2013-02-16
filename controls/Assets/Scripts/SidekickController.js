@@ -24,12 +24,36 @@ function Update () {
 	if (vertical != 0) {
 		pMove.moveVertical(vertical * Time.deltaTime);
 	}
-	
-	if (Input.GetButton("Jump")) {
-		pSpell.casting(Time.deltaTime);
+	if (Input.GetMouseButtonDown(1)) {
+		moveByMouse();
 	}
 	
-	if (Input.GetButtonUp("Jump")) {
-		pSpell.castSpell();
+	handleMouseCasting();
+	
+	// Other casting
+	
+	if (Input.GetButtonDown("Fire1")) {
+		pSpell.castOther();
+	}
+	
+	if (Input.GetButtonDown("Fire2")) {
+		pSpell.castHeal();
+	}
+}
+
+function moveByMouse() {
+	var dest : Vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+	dest.z = 0;
+	pMove.setDestination(dest);
+}
+
+function handleMouseCasting() {
+	if (Input.GetMouseButtonDown(0)) {
+		pSpell.startCasting();
+	}
+	
+	if (pSpell.isCasting() && !Input.GetMouseButton(0)) {
+		// player has released, cast something
+		pSpell.endCasting();
 	}
 }
