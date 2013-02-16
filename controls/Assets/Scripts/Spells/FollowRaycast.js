@@ -4,7 +4,7 @@ private var player : GameObject;
 var width : float = .5;
 function Start () {
 	player = GameObject.Find("Player");
-	//player.GetComponent(Movement).dancing = true;
+	player.GetComponent(Movement).dancing = true;
 }
 
 function FixedUpdate () {
@@ -20,6 +20,6 @@ function FixedUpdate () {
 		// Transfer Coords
 		GameObject.Find("Player").GetComponent(Spells).castOtherAtLocation(transform.position);
 		Destroy(gameObject);
-		//player.GetComponent(Movement).dancing = false;
+		player.GetComponent(Movement).dancing = false;
 	}
 }
