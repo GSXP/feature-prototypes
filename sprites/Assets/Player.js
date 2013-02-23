@@ -85,13 +85,17 @@ function Update () {
 		playerSprite.PlayAnim(runAnimation);
 		animate = true;
 	}
+	
+	if(){
+		camera.transform.position.x += 100;
+	}
 }
 
 //used to position sprite on object
 /*function Draw() {
 	var UV:Vector2;
 	if(Input.GetKeyDown("1")) {
-		UV = spriteManager.PixelSpaceToUVSpace(++WidthOnTheTexture,HeightOnTheTexture);
+		UV = spriteManager.PixelSpaceToUVSpace(++WidthOnTheTexture,HeightOnThxeTexture);
 		playerSprite.uvDimensions = UV;
 		Debug.Log (WidthOnTheTexture+''+HeightOnTheTexture);
 	}

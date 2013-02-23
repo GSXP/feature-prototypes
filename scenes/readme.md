@@ -1,3 +1,3 @@
-Scenes
-------
-When should one stop and another begin? Can we pause them for dialog? How do we transition between?
+Controls
+--------
+Where is the best place to store mouse / keyboard bindings within the project? What is the best way to elicit game response from controls?
