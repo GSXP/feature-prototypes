@@ -44,11 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Player.js" />
      <Compile Include="Assets\Scripts\Dialog\Choices\YouLikeChoice.js" />
      <Compile Include="Assets\Scripts\Dialog\Dialog.js" />
      <Compile Include="Assets\Scripts\Dialog\DialogController.js" />
      <Compile Include="Assets\Scripts\Dialog\DialogSystem.js" />
      <Compile Include="Assets\Scripts\GameMode.js" />
+     <Compile Include="Assets\Scripts\Hero.js" />
+     <Compile Include="Assets\Scripts\LevelScript.js" />
+     <Compile Include="Assets\Scripts\Map.js" />
      <Compile Include="Assets\Scripts\Menus\ListMenu.js" />
      <Compile Include="Assets\Scripts\Menus\MainMenu.js" />
      <Compile Include="Assets\Scripts\Menus\Menu.js" />
@@ -61,6 +65,10 @@
      <Compile Include="Assets\Scripts\Spells\FollowRaycast.js" />
      <Compile Include="Assets\Scripts\Spells\Heal.js" />
      <Compile Include="Assets\Scripts\Spells\Spells.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{69B1F7B3-7ADB-F9F1-2A17-F30EF98821A4}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

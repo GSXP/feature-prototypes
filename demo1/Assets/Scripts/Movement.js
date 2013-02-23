@@ -19,8 +19,27 @@ function Start() {
 function moveHorizontal(delta : float) {
 	changeFace(delta, 0);
 	var newpos = transform.position.x + delta * speed;
+	var width = camTopRight.x - camBottomLeft.x;
 	if (newpos > camBottomLeft.x && newpos < camTopRight.x)
-			transform.position.x = newpos;
+		transform.position.x = newpos;
+	if (newpos >= camTopRight.x){
+	//refactor some time is realy bade
+		print("move camra");
+		Camera.main.transform.position.x += width;
+		transform.position.x = newpos;
+		
+		camBottomLeft.x += width;
+		camTopRight.x += width;
+	}
+	if (newpos <= camBottomLeft.x){
+	//refactor some time is realy bade
+		print("move camra");
+		Camera.main.transform.position.x -= width;
+		transform.position.x = newpos;
+		
+		camBottomLeft.x -= width;
+		camTopRight.x -= width;
+	}
 	hasDest = false;
 }
 

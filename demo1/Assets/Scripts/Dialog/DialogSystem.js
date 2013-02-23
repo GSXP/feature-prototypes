@@ -12,12 +12,13 @@ function Start() {
 	displayTime = -1;
 	currentDialog = null;
 	
-	enqueue(new Dialog("Welcome to the new Controls Demo. Press Space to continue."));
+	/*enqueue(new Dialog("Welcome to the new Controls Demo. Press Space to continue."));
 	enqueue(new Dialog("First, let's try the new mouse controls.\nRight-Click = Move\nLeft-Click (Anywhere) = Heal\nLeft-Hold = Special",30));
 	enqueue(new Dialog("Now for something different. (Press space to continue)"));
 	enqueue(new Dialog("Next, arrow/buttons.\nWASD/Arrows = Move\nLeft-Alt = Heal\nLeft-Ctrl = Special (Hold to sidestep)",30));
 	enqueue(new Dialog("Feel free to mix and match.\nI personally prefer WASD with mouse clicks for casting.",30));
 	enqueue(new Dialog("That concludes this demo. Thanks for playing!", 20));
+	*/
 }
 
 function enqueue(dialog : Dialog) {
